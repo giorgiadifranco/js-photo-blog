@@ -110,6 +110,14 @@
 
         display: flex;
         width: 100%;
+        /*.hover_photo {
+            transition: transform 0.3s ease;*/
+        :hover{
+
+            transform: rotate(10deg) ;
+            display: inline-block;
+            /*transition: transform 0.3s ease;*/
+        }
         
     }
     .col_photo{
@@ -117,7 +125,11 @@
         background-color: white;
         padding: 1rem;
         margin: 2rem;
+
+       
     }
+
+  
 
     .photo_space{
 
@@ -132,6 +144,7 @@
 
     .description{
 
+            display: inline;
         
             font-family: "Edu TAS Beginner", cursive;
             font-optical-sizing: auto;
