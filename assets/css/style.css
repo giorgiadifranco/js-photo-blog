@@ -20,13 +20,15 @@
 /* #region header */
 
 
-#app_header {
+#app_header{
 
     text-align: center;
     padding: 2rem;
     background-color: blueviolet;
 
-    /background-image: url('wall.png');
+   
+
+    /*background-image: url('wall.png');*/
 }
 
 /* #endregion header */
