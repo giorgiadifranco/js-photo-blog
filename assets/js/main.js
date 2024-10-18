@@ -20,7 +20,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
 
         const{title, url, thumbnailUrl} = post
         const markup =  ` 
-                    <div class="col-sm-12 col-md-3 col-lg-1 col_photo hover_photo">
+                    <div class="col-4 col_photo hover_photo">
                         <span class="dot"></span>
                         <div class="card photo_space">
                         <img src="${url}" alt="">
