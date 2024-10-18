@@ -1,6 +1,7 @@
 console.log('it works');
 
 const rowPhotoEl = document.querySelector('.row_photo');
+const rowEl = document.querySelector('.row')
 
 
 axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
@@ -20,7 +21,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
 
         const{title, url, thumbnailUrl} = post
         const markup =  ` 
-                    <div class="col-4 col_photo hover_photo">
+                    <div class="col-3 col_photo hover_photo">
                         <span class="dot"></span>
                         <div class="card photo_space">
                         <img src="${url}" alt="">
@@ -33,27 +34,9 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
 
                 postElements+= markup
     } console.log(postElements)
-    /*postsPhoto.forEach(post =>{
-
-        const {title, url, thumbnailUrl} = post
-
-        const markup =  ` 
-                    <div class="col-sm-12 col-md-3 col-lg-1 col_photo hover_photo">
-                        <span class="dot"></span>
-                        <div class="card photo_space">
-                            ${thumbnailUrl}
-                        </div>
-                        <div>
-                        <h2 class="description ">${title}</h2> 
-                        </div>       
-                     </div> `
-
-
-                postElements+= markup
-
-        }*/
     
-        rowPhotoEl.innerHTML= postElements
+    
+    rowPhotoEl.innerHTML= postElements
 
         
        
