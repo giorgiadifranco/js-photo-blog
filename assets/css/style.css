@@ -6,16 +6,19 @@
 
 }
 
+
 /* #region debug */
 
 .debug { 
 
     border: 1px dashed;
-    background-image: url('cork.png');
+   
+    background-color: coral;
 }
 
-/* #endregion debug */
 
+
+/* #endregion debug */
 
 /* #region header */
 
@@ -24,13 +27,23 @@
 
     text-align: center;
     padding: 2rem;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 
-   
+    background-image: url('/img/wall.png');
 
-    /*background-image: url('wall.png');*/
+  
+
+.sometype-mono {
+  font-family: "Sometype Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
 }
 
 /* #endregion header */
+
+
+
 
 
