@@ -23,7 +23,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
                     <div class="col-sm-12 col-md-3 col-lg-1 col_photo hover_photo">
                         <span class="dot"></span>
                         <div class="card photo_space">
-                            ${url}
+                        <img src="${url}" alt="">
                         </div>
                         <div>
                         <h2 class="description ">${title}</h2> 
