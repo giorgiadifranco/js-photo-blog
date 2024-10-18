@@ -14,7 +14,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
 
     let postElements = ''
 
-    for(let i= 0; i<postsPhoto.lenght; i++){
+    for(let i= 0; i <postsPhoto.length; i++){
 
         const post = postsPhoto[i];
 
@@ -23,7 +23,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
                     <div class="col-sm-12 col-md-3 col-lg-1 col_photo hover_photo">
                         <span class="dot"></span>
                         <div class="card photo_space">
-                            ${thumbnailUrl}
+                            ${url}
                         </div>
                         <div>
                         <h2 class="description ">${title}</h2> 
@@ -32,7 +32,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
 
 
                 postElements+= markup
-    }
+    } console.log(postElements)
     /*postsPhoto.forEach(post =>{
 
         const {title, url, thumbnailUrl} = post
@@ -54,6 +54,8 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
         }*/
     
         rowPhotoEl.innerHTML= postElements
+
+        
        
         
 })
