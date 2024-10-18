@@ -13,12 +13,33 @@
 
     border: 1px dashed;
    
-    background-color: coral;
+   ;
 }
 
 
 
 /* #endregion debug */
+
+/* #region utilities */
+
+.d-flex{
+    display: flex;
+}
+
+.col-6 {
+    width: calc((100/12)*6);
+}
+.col-4 {
+    width: calc((100/12)*4);
+}
+.col-8{
+    width: calc((100/12)*8);
+}
+.col-12{
+    width: 100%;
+}
+
+/* #endregion utilities */
 
 /* #region header */
 
@@ -41,7 +62,27 @@
 }
 }
 
+
+
 /* #endregion header */
+
+/* #region main */
+
+#app_main{
+
+    background-color: chartreuse;
+
+    background-image: url('/img/cork.png');
+
+    .container{
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%
+    }
+}
+
+
+/* #endregion main */
 
 
 
