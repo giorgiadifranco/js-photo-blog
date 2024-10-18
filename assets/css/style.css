@@ -5,3 +5,30 @@
 
 
 }
+
+/* #region debug */
+
+.debug { 
+
+    border: 1px dashed;
+    background-image: url('cork.png');
+}
+
+/* #endregion debug */
+
+
+/* #region header */
+
+
+#app_header {
+
+    text-align: center;
+    padding: 2rem;
+    background-color: blueviolet;
+
+    /background-image: url('wall.png');
+}
+
+/* #endregion header */
+
+
