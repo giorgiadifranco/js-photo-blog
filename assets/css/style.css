@@ -94,6 +94,17 @@
         margin-right: 5%;
         
     }
+
+    .dot {
+        height: 25px;
+        width: 25px;
+        background-image: linear-gradient(to bottom, red , rgb(79, 79, 69));
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 45%;
+        border-style: solid;
+        border-width: 1px;
+      }
     
     .row_photo{
 
