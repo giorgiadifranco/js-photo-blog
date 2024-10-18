@@ -13,7 +13,7 @@
 
     border: 1px dashed;
    
-   ;
+   
 }
 
 
@@ -25,13 +25,19 @@
 .d-flex{
     display: flex;
 }
-
-.col-6 {
-    width: calc((100/12)*6);
+.col-1{
+    width: calc((100/12)*1);
+}
+.col-2{
+    width: calc((100/12)*2);
 }
 .col-4 {
     width: calc((100/12)*4);
 }
+.col-6 {
+    width: calc((100/12)*6);
+}
+
 .col-8{
     width: calc((100/12)*8);
 }
@@ -71,20 +77,63 @@
 #app_main{
 
     background-color: chartreuse;
+    width: 100%;
 
     background-image: url('/img/cork.png');
 
     .container{
+        display: flex;
         width: 90%;
         padding-left: 5%;
-        padding-right: 5%
+        padding-right: 5%;
+        padding-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+    
+    .row_photo{
+
+        width: 80%;
+        
+    }
+    .col_photo{
+
+        background-color: white;
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    .photo_space{
+
+        padding: 1rem;
+        border: 1px rgb(77, 54, 54);
+        margin-bottom: 2rem;
+        width: 300px;
+        height: 300px;
     }
 }
 
 
 /* #endregion main */
 
+/* media mobilefirst */
+@media screen and (max-width: 600px){
 
 
+}
+
+/* media desktop */
+@media screen and (min-width: 992px) {
+
+
+}
+
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:991){
+
+    
+}
 
 
