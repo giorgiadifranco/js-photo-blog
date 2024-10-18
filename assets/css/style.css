@@ -115,6 +115,8 @@
         margin-bottom: 2rem;
         width: 300px;
         height: 300px;
+        background-color: rgb(200, 160, 238);
+        background-image: url('https://plus.unsplash.com/premium_photo-1691414363231-836e2e1bf0ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29wZW5hZ2hlbnxlbnwwfHwwfHx8MA%3D%3D');
     }
 }
 
