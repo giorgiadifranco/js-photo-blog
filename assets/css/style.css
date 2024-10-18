@@ -31,6 +31,9 @@
 .col-2{
     width: calc((100/12)*2);
 }
+.col-3{
+    width: calc((100/12)*3);
+}
 .col-4 {
     width: calc((100/12)*4);
 }
@@ -83,18 +86,19 @@
 
     .container{
         display: flex;
-        width: 90%;
+        width: 100%;
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 5%;
-        margin-left: 5%;
+        
         margin-right: 5%;
         
     }
     
     .row_photo{
 
-        width: 80%;
+        display: flex;
+        width: 100%;
         
     }
     .col_photo{
@@ -120,11 +124,22 @@
 /* media mobilefirst */
 @media screen and (max-width: 600px){
 
+    .row_photo{
 
+            display: flex;
+                    
+        
+    }
 }
 
 /* media desktop */
 @media screen and (min-width: 992px) {
+
+    .row_photo{
+        
+        width: 100%;
+        justify-content: center;
+    }
 
 
 }
@@ -133,7 +148,7 @@
 /* tablet */
 @media screen and (min-width:768px) and (max-width:991){
 
-    
+
 }
 
 
