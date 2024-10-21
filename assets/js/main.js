@@ -44,8 +44,13 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
     
     rowPhotoEl.innerHTML= postElements
 
-    const img = postsPhoto.map((post) =>{ return post.url} )
-    console.log(img);
+    
+     const img = postsPhoto.forEach((post) =>{ 
+        post.addEventListener('click')
+        console.log (post.url)} )
+    
+
+ 
     
     /*
     const overLayimgEL= document.getElementById("img_full[i]");
