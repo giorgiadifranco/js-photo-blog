@@ -4,6 +4,7 @@ const rowPhotoEl = document.querySelector('.row_photo');
 const rowEl = document.querySelector('.row')
 
 
+
 axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
 .then(response =>{
 
@@ -24,7 +25,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
                     <div class="col-3 col_photo hover_photo">
                         <span class="dot"></span>
                         <div class="card photo_space">
-                        <img src="${url}" alt="">
+                        <img src="${url}" onclick="on()" alt="">
                         </div>
                         <div>
                         <h2 class="description ">${title}</h2> 
@@ -43,9 +44,13 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
         
 })
 
-function on() {
+//document.addEventListener("click", 
+    function on() {
+
+
     document.getElementById("overlay").style.display = "block";
-  }
+    }
+  
   
   function off() {
     document.getElementById("overlay").style.display = "none";
