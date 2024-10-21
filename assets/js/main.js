@@ -58,13 +58,18 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
     ) ;
 
     overlayEl.innerHTML = postOverLay;
+    console.log(overlayEl.innerText);
+    
 
    
     const overLayimgEL= document.querySelectorAll(".overlay_img");
 
-    overLayimgEL.forEach((image)=> image.addEventListener('click', function on() {
+    overLayimgEL.forEach((image)=>{image.addEventListener('click', function on() {
             overlayEl.style.display = "block";  // Mostra l'overlay quando si clicca su un'immagine
-        }));
+        })});
+
+        overlayEl.addEventListener ('click', function off() {
+            overlayEl.style.display = "none";})
     /*overLayimgEL.addEventListener('click', function on(){
         overLayElnew.style.display = "block";})*/
 

@@ -39,7 +39,7 @@ https://fonts.google.com/specimen/Sometype+Mono
 
 ## Milestone 1
 
-1. Facciamo in modo di creare un overlay che copra l’intera pagina
+1. Facciamo in modo di creare un overlay che copra l’intera pagina --> al click del'immagine appare l'overlay - l'immagine viene visualizzata per l'intera grandezza e centrata
  
 2. all’interno, centrata, disponiamo un’immagine qualunque ed un button di chiusura.
 
