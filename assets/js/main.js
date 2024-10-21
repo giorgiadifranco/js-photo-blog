@@ -44,19 +44,53 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
     
     rowPhotoEl.innerHTML= postElements
 
+    const overlayEl = document.getElementById("overlay");
+
+    let postOverLay = ''
+    postsPhoto.forEach((postOver)=>{
+            const{ url} = postOver
+            const markup =  `                     
+                        <img src="${url}" onclick="on()" class="overlay_img" alt="">
+                         `
+            postOverLay+=  markup
+        } 
+        
+    ) ;
+
+    overlayEl.innerHTML = postOverLay;
+
+    
+})
+    
+
+
+        //const postOver = postsPhoto[i];
+/*
+        const{ url} = postOver
+        const markup =  `                     
+                        <img src="${url}" onclick="on()" class="overlay_img" alt="">
+                         `
+
+                        postOverLay+= markup
+
+                
+    } console.log(postOverLay)
+     
+    overlayEl.innerHTML= postOverLay;
+
     const images = document.querySelectorAll('img');
     const overLayImg = document.querySelectorAll('.overlay_img');
     images.forEach((image) => { //console.log(image.src)
         image.addEventListener('click', function onOff() {
            document.getElementById("overlay").style.display = "block";
-           overLayImg.src = image.src;
+           
         })      
         });
 
 
         //funzione di off con click sull'overlay
 
-        const overlayEl = document.getElementById("overlay");
+       
 
         overlayEl.addEventListener ('click', function off() {
         overlayEl.style.display = "none";}
