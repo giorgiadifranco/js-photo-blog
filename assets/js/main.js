@@ -6,6 +6,8 @@ const rowEl = document.querySelector('.row')
 //const overLayEl = document.getElementById("overlay")
 
 //const img_fullEL = document.getElementById('img_full')
+const overLayimgEL= document.getElementById("img_full[i]");
+console.log(overLayimgEL);
 
 
 axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
@@ -28,7 +30,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
                     <div class="col-3 col_photo hover_photo">
                         <span class="dot"></span>
                         <div class="card photo_space">
-                        <img src="${url}" onclick="on()" class="img_full${i}" alt="">
+                        <img src="${url}" onclick="on()" id="img_full${i}" alt="">
                         </div>
                         <div>
                         <h2 class="description ">${title}</h2> 
@@ -42,8 +44,12 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
     
     rowPhotoEl.innerHTML= postElements
 
+    const img = postsPhoto.map((post) =>{ return post.url} )
+    console.log(img);
     
-
+    /*
+    const overLayimgEL= document.getElementById("img_full[i]");
+    console.log(overLayimgEL);
     
   /*overLayEl.addEventListener('click', function On() {
 
@@ -64,15 +70,24 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
 })
 
 
-function on() {
-    document.getElementById("overlay").style.display = "block";
-    document.getElementById("img_full1").style.display = "block";
+function on(imgUrl) {
+    const overLayEl = document.getElementById("overlay") //.style.display = "block";
+    
+
+    overLayimgEL.src = imgUrl;
+    overLayEl.style.display = "block";
+    //.style.display = "block";
+
   }
-  
   function off() {
+    const overlayEl = document.getElementById("overlay");
+    overlayEl.style.display = "none";  // Nascondi l'overlay
+}
+  /*function off(url) {
     document.getElementById("overlay").style.display = "none";
-    document.getElementById("img_full1").style.display = "none";
-  }
+    document.getElementById("img_full").style.display = "none";
+  }*/
+
 
 /*img_fullEL.addEventListener('click', function() {
     if (document.getElementById("overlay").style.display = "none" ) {
