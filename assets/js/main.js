@@ -30,7 +30,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
                     <div class="col-3 col_photo hover_photo">
                         <span class="dot"></span>
                         <div class="card photo_space">
-                        <img src="${url}" onclick="on()" id="img_full${i}" alt="">
+                        <img src="${url}" onclick="on()" id="" alt="">
                         </div>
                         <div>
                         <h2 class="description ">${title}</h2> 
@@ -44,10 +44,26 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
     
     rowPhotoEl.innerHTML= postElements
 
+    const images = document.querySelectorAll('img');
+    images.forEach((image) => { //console.log(image.src)
+        image.addEventListener('click', function on() {
+           if(document.getElementById("overlay").style.display = "none"){document.getElementById("overlay").style.display = "block";
+        image.src}
+        else if(document.getElementById("overlay").style.display ="block"){document.getElementById("overlay").style.display = "none"}})
+            
+        });
+    });
+
+
+   
+
     
-     const img = postsPhoto.forEach((post) =>{ 
-        post.addEventListener('click')
-        console.log (post.url)} )
+     /*const img = postsPhoto.forEach((post) =>{ 
+        post.addEventListener('click'=>function On( imgUrl , overlay){
+            const overLayEl = document.getElementById("overlay")+post.url
+        })
+        //console.log (post.url)
+        }         )*/
     
 
  
@@ -69,7 +85,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
 
     
   
-
+/*
         
     
 })
