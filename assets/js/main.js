@@ -30,7 +30,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
                     <div class="col-3 col_photo hover_photo">
                         <span class="dot"></span>
                         <div class="card photo_space">
-                        <img src="${url}" onclick="onOff()" id="" alt="">
+                        <img src="${url}" onclick="on()" id="" alt="">
                         </div>
                         <div>
                         <h2 class="description ">${title}</h2> 
@@ -47,12 +47,21 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
     const images = document.querySelectorAll('img');
     images.forEach((image) => { //console.log(image.src)
         image.addEventListener('click', function onOff() {
-           if(document.getElementById("overlay").style.display = "none"){document.getElementById("overlay").style.display = "block";
-        image.src}
-        else if(document.getElementById("overlay").style.display ="block"){document.getElementById("overlay").style.display = "none"}})
-            
+           document.getElementById("overlay").style.display = "block";
+        image.src})
         });
-    });
+
+
+        //funzione di off con click sull'overlay
+
+        const overlayEl = document.getElementById("overlay");
+
+        overlayEl.addEventListener ('click', function off() {
+        overlayEl.style.display = "none";}
+)
+
+
+});
 
 
    
